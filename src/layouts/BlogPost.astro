@@ -43,6 +43,24 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 				font-style: italic;
 			}
 		</style>
+		<!-- Privacy-friendly analytics by Plausible -->
+		<script
+			async
+			src="https://plausible.beyondfrontend.dev/js/pa-qceyeU3NuaZq3lL5ykPkV.js"
+		></script>
+		<script>
+			((window.plausible =
+				window.plausible ||
+				function () {
+					(plausible.q = plausible.q || []).push(arguments);
+				}),
+				(plausible.init =
+					plausible.init ||
+					function (i) {
+						plausible.o = i || {};
+					}));
+			plausible.init();
+		</script>
 	</head>
 
 	<body>
